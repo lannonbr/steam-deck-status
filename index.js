@@ -31,7 +31,11 @@ async function run() {
 
   const timeLeft = timeLeftStr.split("You have ")[1].split(" worth of")[0];
 
-  console.log(JSON.stringify({ lastKnown, timeLeft, percentage }));
+  const timeLeftShort = timeLeft.split(",")[0];
+
+  console.log(
+    JSON.stringify({ lastKnown, timeLeft, percentage, timeLeftShort })
+  );
 
   await browser.close();
 }
