@@ -6,7 +6,7 @@ async function run() {
   const browser = await firefox.launch();
   const page = await browser.newPage({
     userAgent:
-      "stream-deck-status checker/1.0.0 (https://github.com/lannonbr/stream-deck-status/)",
+      "steam-deck-status checker/1.0.0 (https://github.com/lannonbr/steam-deck-status/)",
   });
   await page.goto(url);
 
