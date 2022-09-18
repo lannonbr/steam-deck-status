@@ -1,6 +1,9 @@
 const { firefox } = require("playwright");
 
 async function run() {
+  // US reservation
+  // 256GB model
+  // unix timestamp: 1660265760 (2022-08-12T00:56Z)
   const url = "https://getmydeck.ingenhaag.dev/s/US/256/1660265760";
 
   const browser = await firefox.launch();
